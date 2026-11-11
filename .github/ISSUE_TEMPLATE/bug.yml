@@ -1,0 +1,27 @@
+name: Something doesn't work
+description: A bug, a crash, something that looks wrong
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks! Tickets are public — remove anything private from screenshots.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, what you got instead.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Crastio version
+      description: Settings › About
+      placeholder: 0.3.0
+  - type: dropdown
+    id: os
+    attributes:
+      label: Computer
+      options: [Mac (Apple Silicon), Mac (Intel), Windows 11, Windows 10]
+    validations:
+      required: true

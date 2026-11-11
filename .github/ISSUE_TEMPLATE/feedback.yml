@@ -1,0 +1,16 @@
+name: Feedback or idea
+description: What confused you, what's missing, what you'd change
+labels: [feedback]
+body:
+  - type: textarea
+    id: feedback
+    attributes:
+      label: Your feedback
+      description: Anything helps — first impressions, what you tried first, what you expected.
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: Computer
+      options: [Mac, Windows]
