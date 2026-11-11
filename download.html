@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; media-src 'self'; style-src 'self'; script-src 'self'; connect-src https://api.github.com; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<title>Download — Crastio</title>
+<meta name="description" content="Download Crastio for macOS and Windows.">
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site">
+  <a class="brand" href="index.html"><img src="assets/logo.svg" alt="">Crastio</a>
+  <nav><a href="features.html">Features</a><a href="changelog.html">Changelog</a><a href="support.html">Support</a></nav>
+  
+</header>
+<div class="wrap">
+
+<div class="prose wide">
+<h1>Download Crastio</h1>
+<p>Version <b id="version">0.3.0</b> · free during the beta. Crastio updates itself: updates are signed, and the app only installs an update signed with Crastio's key.</p>
+<div class="downloads" data-repo="AliGhemires/crastio-releases">
+  <div class="card"><h3>macOS</h3><p>macOS 12 (Monterey) or later — Apple Silicon and Intel.</p><a class="btn" id="mac" href="https://github.com/AliGhemires/crastio-releases/releases/latest">Download for Mac (.dmg)</a><small id="mac-sum"></small></div>
+  <div class="card"><h3>Windows</h3><p>Windows 10 or 11, 64-bit (x64).</p><a class="btn" id="win" href="https://github.com/AliGhemires/crastio-releases/releases/latest">Download for Windows (.exe)</a><small id="win-sum"></small></div>
+</div>
+<p>All files and their SHA-256 checksums: <a href="https://github.com/AliGhemires/crastio-releases/releases/latest">the latest release on GitHub</a>.</p>
+<div class="notice"><b>First launch during the beta.</b> Crastio isn't yet signed with an Apple or Microsoft certificate, so your computer asks for a confirmation the first time:
+<ul>
+<li><b>Mac:</b> open the .dmg and drag Crastio to Applications. Open it once; macOS says it can't check it. Then go to System Settings › Privacy &amp; Security, scroll to "Crastio was blocked", and choose <b>Open Anyway</b>.</li>
+<li><b>Windows:</b> SmartScreen shows "Windows protected your PC". Choose <b>More info</b>, then <b>Run anyway</b>.</li>
+</ul>
+Only do this for a file downloaded from this page or from the GitHub release above. You can compare its checksum with the published one.</div>
+<h2>After installing</h2>
+<p>Start using Crastio right away without an account, or create one to sync between your computers and share projects with other people — during the beta, with your GitHub account (sign-up by email opens soon). Your data is in a local database on your computer; Settings › Data exports it. Crastio updates itself when a new version is out.</p>
+<h2>Feedback</h2>
+<p>Tell me what works and what doesn't: <a href="support.html">how to send feedback</a>.</p>
+<h2>Uninstalling</h2>
+<p><b>Mac:</b> quit Crastio and move it from Applications to the Trash. Your data stays in <code>~/Library/Application Support/app.crastio.desktop</code> until you delete that folder. <b>Windows:</b> Settings › Apps › Crastio › Uninstall; the uninstaller asks whether to keep your data.</p>
+</div>
+<footer class="site">
+  <span>© 2026 Ali Ghemires</span>
+  <a href="features.html">Features</a><a href="download.html">Download</a><a href="changelog.html">Changelog</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="security.html">Security</a>
+  <span class="spacer"></span>
+  <span>No trackers on this site.</span>
+</footer>
+</div>
+<script src="download.js" defer></script>
+</body>
+</html>

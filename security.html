@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; media-src 'self'; style-src 'self'; script-src 'self'; connect-src https://api.github.com; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<title>Security — Crastio</title>
+<meta name="description" content="How to report a vulnerability in Crastio, and how Crastio is protected.">
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site">
+  <a class="brand" href="index.html"><img src="assets/logo.svg" alt="">Crastio</a>
+  <nav><a href="features.html">Features</a><a href="changelog.html">Changelog</a><a href="support.html">Support</a></nav>
+  <a class="btn small" href="download.html">Download</a>
+</header>
+<div class="wrap">
+
+<div class="prose"><h1>Security</h1>
+<p>Thank you for helping keep Crastio and its users safe.</p>
+<h2>Reporting a vulnerability</h2>
+<p>Report it <strong>privately</strong> through GitHub: <a href="https://github.com/AliGhemires/crastio-releases/security/advisories/new">github.com/AliGhemires/crastio-releases/security/advisories/new</a> (you need a GitHub account; only the maintainer sees the report). Include:</p>
+<ul><li>what you found and where (app version, operating system, the feature or endpoint);</li><li>steps to reproduce, and what an attacker could do with it;</li><li>your name or handle if you'd like to be credited.</li></ul>
+<p>Please don't open a public issue, post details publicly, or access other people's data while testing. Use your own accounts. We'll acknowledge your report within <strong>3 working days</strong>, keep you informed, and tell you when it's fixed. We don't take legal action against good-faith research that follows this policy.</p>
+<h2>Supported versions</h2>
+<p>Only the latest release receives security fixes. Crastio updates itself (signed updates); keep automatic updates on.</p>
+<h2>Scope</h2>
+<p>In scope: the Crastio desktop app, its cloud services (sync, collaboration, Watchers, the MCP server) and the website. Out of scope: denial-of-service, spam, social engineering, physical access to an unlocked computer, and vulnerabilities in third-party services we use (report those to the provider; tell us if it affects Crastio).</p>
+<h2>How Crastio is protected (summary)</h2>
+<p>Row Level Security on every cloud table, server-side permission checks for collaboration and the MCP server, hashed and scoped assistant tokens with rate limits, encrypted storage of connected mailbox credentials, a strict Content Security Policy in the app, signed updates, dependency and secret scanning in CI. No system is perfectly secure; we fix confirmed issues by severity.</p></div>
+<footer class="site">
+  <span>© 2026 Ali Ghemires</span>
+  <a href="features.html">Features</a><a href="download.html">Download</a><a href="changelog.html">Changelog</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="security.html">Security</a>
+  <span class="spacer"></span>
+  <span>No trackers on this site.</span>
+</footer>
+</div>
+
+</body>
+</html>

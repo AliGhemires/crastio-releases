@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; media-src 'self'; style-src 'self'; script-src 'self'; connect-src https://api.github.com; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<title>Privacy policy — Crastio</title>
+<meta name="description" content="What Crastio stores, where, why, and your rights.">
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site">
+  <a class="brand" href="index.html"><img src="assets/logo.svg" alt="">Crastio</a>
+  <nav><a href="features.html">Features</a><a href="changelog.html">Changelog</a><a href="support.html">Support</a></nav>
+  <a class="btn small" href="download.html">Download</a>
+</header>
+<div class="wrap">
+
+<div class="prose"><h1>Privacy policy</h1>
+<p><em>Beta draft, not yet reviewed by a lawyer. Last updated: 11 November 2026.</em></p>
+<p>This policy explains what Crastio stores, where, why, for how long, and your rights. It describes how Crastio actually works today; when that changes, this page changes first.</p>
+<p><strong>Who is responsible:</strong> Ali Ghemires ("we"). Contact: <a href="https://github.com/AliGhemires/crastio-releases/issues/new/choose">open a ticket on GitHub</a>.</p>
+<p><strong>During the beta, an account is optional and is created with your GitHub account.</strong> Without an account, Crastio runs only on your computer: nothing about you or your planner is sent to us, and the app contacts GitHub only to check for updates. With an account, the parts of this policy about accounts, sync, shared projects, Watchers and AI assistants apply.</p>
+<h2>The short version</h2>
+<ul><li>Crastio works <strong>without an account</strong>. Then everything stays on your computer and nothing is sent to us.</li><li>With an account, your workspace is <strong>synced through our cloud in the EU</strong> (Supabase, Ireland) so you can use it on several computers and share projects.</li><li>Optional features — Watchers (Outlook, course calendars, web pages), AI analysis, connecting an AI assistant (MCP) — only start when you turn them on, and each says what it uses.</li><li>No advertising, no selling of data, no analytics or tracking, no crash reporting.</li></ul>
+<h2>1. On your computer</h2>
+<p>Crastio stores your planner (tasks, courses, Today, routines, settings, projects you're in) in a database file in the app's data folder. Your sign-in session is stored encrypted, with the key kept in your operating system's credential store. With several Crastio accounts on one computer, each has its own separate database. The planner file itself isn't encrypted by Crastio; it is protected by your computer account (like most desktop apps).</p>
+<h2>2. Your account (optional)</h2>
+<table><thead><tr><th>What</th><th>Why</th></tr></thead><tbody><tr><td>Email address, password (stored only as a hash by our authentication provider), or your Google / GitHub sign-in identity (name, email, avatar from that provider)</td><td>To sign you in. Signing in with Google gives Crastio <strong>no access to Gmail</strong>; GitHub gives <strong>no access to your repositories</strong>.</td></tr><tr><td>Profile: display name, optional full name, optional picture, language, time zone</td><td>Shown to you, and your name and picture to members of projects you share</td></tr><tr><td>Your synced workspace (the same data as on your computer)</td><td>Sync between your computers</td></tr><tr><td>Computers using your account (a name, operating system, last sync time)</td><td>So you can see and remove them</td></tr></tbody></table>
+<p>When you create an account or change your password, Crastio checks the password against known data breaches using Have I Been Pwned's range service: only the first 5 characters of a hash of the password leave your computer, never the password.</p>
+<h2>3. Shared projects</h2>
+<p>Members of a project see that project's tasks, comments, activity and members (names and pictures). They never see your personal tasks, your Today, your routines or your other projects. Invitations are sent to an email address or as a code; inviting someone doesn't reveal whether that address has an account.</p>
+<h2>4. Watchers (optional)</h2>
+<ul><li><strong>Outlook:</strong> with your permission (Microsoft sign-in), our cloud reads new messages in the folders you choose with read-only access (<code>Mail.Read</code>; Crastio can't send email). The access token is stored encrypted (AES-256-GCM) on our servers. We keep a message's title, sender and link and what was found in it (a deadline, a change), <strong>not the full message</strong>.</li><li><strong>Calendars, feeds and web pages:</strong> our cloud downloads the addresses you add. A private calendar link is stored encrypted.</li><li><strong>AI analysis (optional, can be turned off):</strong> relevant parts of new messages and announcements are sent to <strong>Cloudflare Workers AI</strong> (a hosted model, not on your computer) to recognise deadlines. Passwords and access tokens are never sent. What Cloudflare does with this data is governed by its own terms for Workers AI.</li><li>Watchers run in our cloud even when your computers are off. Disconnecting a source deletes its stored credentials.</li></ul>
+<h2>5. Connecting an AI assistant (MCP, optional)</h2>
+<p>You can let an assistant you use (such as Claude Code) read and change your planner with a token you create in Crastio, limited to the permissions and projects you choose. We store only a fingerprint (hash) of the token, and a log of its actions (which tool, a short summary) so you can review them. What you or the assistant send to the assistant's own provider (for example Anthropic) is governed by that provider's terms, not ours.</p>
+<h2>6. Service providers</h2>
+<table><thead><tr><th>Provider</th><th>Role</th><th>Where</th></tr></thead><tbody><tr><td>Supabase</td><td>Database, authentication, file storage, cloud functions</td><td>EU (Ireland)</td></tr><tr><td>Cloudflare</td><td>AI analysis (Workers AI), only if you turn it on</td><td>Global network</td></tr><tr><td>Microsoft</td><td>Outlook access, only if you connect it</td><td>Microsoft's data centres</td></tr><tr><td>Resend</td><td>Sending account emails (verification codes)</td><td>United States</td></tr><tr><td>GitHub (Microsoft)</td><td>Downloading Crastio and its updates</td><td>Global</td></tr><tr><td>Google, GitHub</td><td>Sign-in, only if you choose them</td><td>—</td></tr><tr><td>Have I Been Pwned</td><td>Breached-password check (5 hash characters)</td><td>Global (Cloudflare)</td></tr></tbody></table>
+<p>Some providers may process data outside the European Economic Area; where they do, transfers rely on safeguards such as the EU–US Data Privacy Framework or the European Commission's Standard Contractual Clauses.</p>
+<h2>7. How long we keep data</h2>
+<table><thead><tr><th>Data</th><th>Kept</th></tr></thead><tbody><tr><td>Account, profile, synced workspace</td><td>Until you delete them or your account</td></tr><tr><td>Watcher items that weren't relevant</td><td>180 days</td></tr><tr><td>Watcher run and job logs</td><td>14 days</td></tr><tr><td>Reply drafts</td><td>30 days</td></tr><tr><td>Daily briefings</td><td>45 days</td></tr><tr><td>Read notifications / all notifications</td><td>120 days / 1 year</td></tr><tr><td>AI assistant (MCP) action log, decided plans</td><td>180 days</td></tr><tr><td>Daily AI usage counters</td><td>About 13 months</td></tr><tr><td>Encrypted database backups</td><td>30 days</td></tr></tbody></table>
+<p>Deleting your account removes it and its data from our database at once (and your profile picture from storage); copies in encrypted backups disappear within 30 days. Tasks you created in a project shared with others stay in that project for its members (without your name), because they are part of their work too.</p>
+<h2>8. Your rights</h2>
+<p>You can, at any time: see and correct your data in the app; <strong>export</strong> it (Settings › Data — JSON for everything, CSV for tasks); <strong>delete</strong> your account and its data (Settings › Account); turn off optional features and disconnect sources. Under the GDPR you also have the rights of access, rectification, erasure, restriction, portability and objection. Write to <a href="https://github.com/AliGhemires/crastio-releases/issues/new/choose">open a ticket on GitHub</a>. You can complain to your data protection authority.</p>
+<p>Legal bases: providing the service you asked for (contract) for your account, sync, collaboration and the features you turn on; your consent for AI analysis (you can withdraw it in Settings › AI); our legitimate interest in keeping the service secure (rate limits, abuse prevention).</p>
+<h2>9. Security</h2>
+<p>Encryption in transit everywhere, access rules enforced by the database for every request, encrypted storage of connected-account credentials, signed app updates. See https://alighemires.github.io/crastio-releases/security.html for how to report a vulnerability.</p>
+<h2>10. Children</h2>
+<p>Crastio is not intended for children under 16.</p>
+<h2>11. Changes</h2>
+<p>We'll announce significant changes in the app or by email before they take effect.</p></div>
+<footer class="site">
+  <span>© 2026 Ali Ghemires</span>
+  <a href="features.html">Features</a><a href="download.html">Download</a><a href="changelog.html">Changelog</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="security.html">Security</a>
+  <span class="spacer"></span>
+  <span>No trackers on this site.</span>
+</footer>
+</div>
+
+</body>
+</html>

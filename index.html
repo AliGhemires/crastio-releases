@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; media-src 'self'; style-src 'self'; script-src 'self'; connect-src https://api.github.com; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<title>Crastio — make time visible</title>
+<meta name="description" content="A calm planner for Mac and Windows: every deadline is a ribbon of remaining time. Tasks, Today, courses and shared projects. Works offline, without an account.">
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site">
+  <a class="brand" href="index.html"><img src="assets/logo.svg" alt="">Crastio</a>
+  <nav><a href="features.html">Features</a><a href="changelog.html">Changelog</a><a href="support.html">Support</a></nav>
+  <a class="btn small" href="download.html">Download</a>
+</header>
+<div class="wrap">
+
+<div class="home">
+<section class="hero">
+  <h1>Make time visible.</h1>
+  <p class="lead">Crastio is a planner for Mac and Windows that shows every deadline as a ribbon of the time you have left. Plan your day, follow your courses, run projects with others. It works offline and without an account.</p>
+  <div class="actions"><a class="btn" href="download.html">Download Crastio 0.3.0</a><a class="btn secondary" href="features.html">See what it does</a></div>
+  <p class="note">Free during the beta · macOS and Windows</p>
+  <figure class="film" data-film>
+  <video controls muted loop playsinline preload="metadata" poster="assets/crastio-film-poster.jpg" width="1920" height="1080" aria-describedby="film-text">
+    <source src="assets/crastio-film.mp4" type="video/mp4">
+    <a href="assets/crastio-film.mp4">Watch the film (MP4, 35 seconds)</a>
+  </video>
+  <div class="film-controls"><button type="button" data-film-play aria-label="Pause the film">Pause</button><button type="button" data-film-sound aria-pressed="false">Sound off</button></div>
+  <figcaption id="film-text">A 35-second film. Deadlines draw as coloured ribbons on the calendar. In a terminal, Claude Code is asked to plan the next two weeks; it proposes six tasks to Crastio, they are approved in the app and land on the calendar as ribbons from their start dates to their deadlines. A Watcher turns an email about an assignment into one more ribbon. The tasks appear on a shared project board and one is completed in Today. Then three ribbons fly up, the app's screens whirl around them and fall into the Crastio logo as it forms.</figcaption>
+</figure>
+</section>
+<section class="block">
+  <h2>Everything you plan, in one place.</h2>
+  <p>Crastio is a complete planner on its own. Accounts, sync, shared projects, Watchers and AI assistants are there when you want them, and off until you turn them on.</p>
+  <div class="bento">
+    <article class="cell s4" data-tone="teal"><h3>Deadlines you can see</h3><p>Ribbons shrink as the date approaches. The calendar adapts from a few days to several months.</p><div class="pic"><img src="assets/bento-calendar.png" alt="The calendar: coloured ribbons run from today to each deadline" width="1400" height="744" loading="lazy"></div></article>
+    <article class="cell s2" data-tone="amber"><h3>Today</h3><p>Pick what matters today from your tasks, courses and routines. What you don't finish carries over.</p><div class="pic"><img src="assets/bento-today.png" alt="Today: a short list of objectives, one of them completed" width="1000" height="740" loading="lazy"></div></article>
+    <article class="cell s3" data-tone="lavender"><span class="tag">Optional</span><h3>Works with Claude Code</h3><p>Ask for a plan right where you code. Claude Code proposes it to Crastio; nothing is added until you approve.</p><div class="pic"><img src="assets/bento-claude.png" alt="A terminal: Claude Code calls Crastio to propose a two-week sprint" width="1000" height="528" loading="lazy"></div></article>
+    <article class="cell s3" data-tone="coral"><span class="tag">Optional</span><h3>Watchers</h3><p>Let Crastio watch an Outlook mailbox, course calendars or pages, and turn clear deadlines into tasks, even while your computer is off.</p><div class="pic"><img src="assets/bento-watchers.png" alt="The AI Inbox: a quiz found in an email, waiting for a decision" width="1000" height="528" loading="lazy"></div></article>
+    <article class="cell s3" data-tone="teal"><h3>Projects, alone or together</h3><p>A board with your own columns, a list and a timeline. Sharing a project with other people comes with accounts.</p><div class="pic"><img src="assets/bento-board.png" alt="A project board with cards assigned to teammates" width="1000" height="500" loading="lazy"></div></article>
+    <article class="cell s3" data-tone="amber"><h3>Courses</h3><p>A semester tracker for lectures and exercises, with your materials.</p><div class="pic"><img src="assets/bento-courses.png" alt="The semester grid: lectures and exercises checked week by week" width="1000" height="500" loading="lazy"></div></article>
+  </div>
+</section>
+<section class="block">
+  <h2>Private by design</h2>
+  <p>No ads, no analytics, no tracking. Without an account nothing leaves your computer. With one, your workspace syncs through servers in the EU and only you — and the people you share a project with — can read it. <a href="privacy.html">Read the privacy policy.</a></p>
+</section>
+<section class="block">
+  <h2>Tell me what you think</h2>
+  <p>Crastio is in beta: what confuses you, what's missing and what breaks is exactly what I want to hear. <a href="support.html">How to send feedback.</a></p>
+</section>
+</div>
+<footer class="site">
+  <span>© 2026 Ali Ghemires</span>
+  <a href="features.html">Features</a><a href="download.html">Download</a><a href="changelog.html">Changelog</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="security.html">Security</a>
+  <span class="spacer"></span>
+  <span>No trackers on this site.</span>
+</footer>
+</div>
+<script src="film.js" defer></script>
+</body>
+</html>
